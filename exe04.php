@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercicio01</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 </head>
 <body>
     <h1>Exercício 01</h1>
@@ -12,6 +14,9 @@
         <input type="number" id="num1" name="num1" required><br><br>
 
         <label for="num2"> número 2: </label>
+        <input type="number" id="num2" name="num2" required><br><br>
+
+        <label for="num2"> número 3: </label>
         <input type="number" id="num2" name="num2" required><br><br>
 
     
@@ -26,13 +31,17 @@
         $num2 = $_POST['num2'];
     }
         
-    if ($num1 > $num2){
+    if ($num1 <= $num2){
         
-        echo"<h3>O numero maior é: $num1 </h3>";
+        echo"<h3>O numero menor é: $num1 </h3>";
 
-    }else if ($num1 < $num2){
+    }else if ($num1 <= $num2){
 
-        echo "<h3> o numero maior é : $num2";
+        echo "<h3> o menor número  é : $num2";
+    }else if ($num1 <= $num2){
+
+    }elseif ($num1 = $num2 = $num3) {
+        echo "os números são iguais";
     }
 
    

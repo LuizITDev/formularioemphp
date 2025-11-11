@@ -15,12 +15,7 @@
         <label for="num2"> número 2: </label>
         <input type="number" id="num2" name="num2" required><br><br>
 
-        <label for="num3"> número 3:</label>
-        <input type="number" id="num3" name="num3" required><br><br>
-
-        <label for="num4"> número 4: </label>
-        <input type="number" id="num4" name="num4" required><br><br>
-
+        
 
         <input type="submit" value="Verificar">
     </form>
@@ -30,10 +25,10 @@
     if($_SERVER["REQUEST_METHOD"]=="POST"){
         $num1 = $_POST['num1'];//pega a indformação do formulário
         $num2 = $_POST['num2'];
-        $num3 = $_POST['num3'];
-        $num4 = $_POST['num4'];
-        $soma = $num1 + $num2 + $num3 + $num4;
-        echo"<h3>Os números digitados foram : $soma </h3>";
+        
+        $multipicacao = $num1 * $num2;
+
+        echo"<h3>O resultado é = $multipicacao </h3>";
 
     }
 ?>    
